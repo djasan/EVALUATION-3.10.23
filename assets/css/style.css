@@ -1,0 +1,295 @@
+
+
+
+
+@font-face {
+    font-family: "KumbhSans";
+    src: url(../KumbhSans-VariableFont_wght.ttf);
+  }
+
+
+  * {
+  margin: 0;
+  padding: 0;
+  border: 2px solid #ccc2c2; 
+  }
+
+body{
+    background-color: whitew;
+    background-image: url(./skateboarder.jpg);
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+
+
+}
+body .burger .logo{
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row-reverse;
+}
+
+
+header{
+    background-color: white;
+}
+.referencelogo{
+font-family:"KumbhSans" ;
+color: rgb(255, 125, 26);
+font-size: 30px;
+font-weight: 700 ;
+display: flex;
+justify-content: end;
+align-items: baseline;
+}
+.logo{
+    font-family:"KumbhSans" ;
+    font-size: 26px;
+font-weight: 700;
+top: 0;
+
+
+
+
+}
+
+
+
+
+
+
+.menu {
+    --s: 25px; /* control the size */
+    --c: black; /* the color */
+    
+    height: var(--s);
+    aspect-ratio: 1;
+    border: none;
+    padding: 0;
+    border-inline: calc(var(--s)/2) solid #0000; 
+    box-sizing: content-box;
+    --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
+           no-repeat content-box border-box;
+    --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
+           repeat-y content-box border-box;
+    background: 
+      var(--_g2) left  var(--_p,0px) top,
+      var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
+      var(--_g2) right var(--_p,0px) top,
+      var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
+    background-size: 
+      20% 80%,
+      40% 100%;
+    position: relative;
+    clip-path: inset(0 25%);
+   
+    cursor: pointer;
+    transition: 
+      background-position .3s var(--_s,.3s), 
+      clip-path 0s var(--_s,.6s);
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+  }
+  .menu:before,
+  .menu:after {
+    content:"";
+    position: absolute;
+    border-radius: var(--s);
+    inset: 40% 0;
+    background: var(--c);
+    transition: transform .3s calc(.3s - var(--_s,.3s));
+  }
+  
+  .menu:checked {
+    clip-path: inset(0);
+    --_p: calc(-1*var(--s));
+    --_s: 0s;
+  }
+  .menu:checked:before {
+    transform: rotate(45deg);
+  }
+  .menu:checked:after {
+    transform: rotate(-45deg);
+  }
+  .menu:focus-visible {
+    clip-path: none;
+  
+    border: none;
+    outline: 2px solid var(--c);
+    outline-offset: 5px;
+  }
+
+  
+
+  nav{
+    background-color: white;
+  }
+  .navbar li{
+    
+        color: black;
+        list-style: none;
+        height: 100px;
+        width: 160px;
+        margin: 0px;
+    background-color: white;
+        /* Centrer un unique élément veticalement et horizontalement */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  .navbar ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .panier1{
+    width: 5%;
+    height:5% ;
+  }
+
+  
+  
+h1{
+    font-family:"KumbhSans" ;
+   font-size: 1rem; ;
+   font-weight: 400;
+   background-color: white;
+}
+
+img{
+width: 100%;
+}
+
+
+
+
+h2{
+    font-family:"KumbhSans" ;
+   font-size: 3rem; ;
+   font-weight: 400;
+}
+
+h4{
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 30px;
+}
+h5{
+
+    background-color:rgb(255, 228, 207) ;
+}
+span{
+    background-color:rgb(255, 228, 207) ;
+    font-family:"KumbhSans" ;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000;
+}
+.ancienprix{
+    text-decoration:line-through;
+    background-color: white;
+}
+
+
+
+
+
+.basket{
+   
+    width: 10%;
+text-align: center;
+background-color: rgb(255, 125, 26) ;
+}
+
+   .nitems{
+    text-align: center;
+    font-size:25px ;
+    background-color:rgb(255, 228, 207) ;
+    color:rgb(255, 125, 26);
+   }
+
+div .nitems{
+    color:rgb(255, 125, 26);
+    font-weight: 700;
+   letter-spacing: 1rem;
+
+}
+span{
+    color:#0c0c0c ;
+}
+
+h6{
+font-size:30px ;
+color: white;
+text-align: center;
+font-family:"KumbhSans" ;
+font-weight: 700;
+
+
+}
+
+footer{
+
+    background-color:rgb(255, 125, 26) ;
+
+
+
+
+}
+  .reseaux{
+width: 40%;
+display: flex;
+justify-content: center;
+align-items:  baseline;
+
+   }
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+     /* Styles pour aligner les éléments à HOME en version desktop */
+     @media (min-width: 768px) {
+        .navbar ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center; /* Aligner les éléments verticalement au centre */
+        }
+
+        .navbar ul li {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .navbar ul li:hover .submenu {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
+    }
+
+
+    
